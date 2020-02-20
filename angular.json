@@ -5,36 +5,36 @@
   "projects": {
     "ngx-feedback2": {
       "projectType": "library",
-      "root": "projects/ngx-feedback",
-      "sourceRoot": "projects/ngx-feedback/src",
+      "root": "projects/ngx-feedback2",
+      "sourceRoot": "projects/ngx-feedback2/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngx-feedback/tsconfig.lib.json",
-            "project": "projects/ngx-feedback/ng-package.json"
+            "tsConfig": "projects/ngx-feedback2/tsconfig.lib.json",
+            "project": "projects/ngx-feedback2/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-feedback/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-feedback2/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-feedback/src/test.ts",
-            "tsConfig": "projects/ngx-feedback/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-feedback/karma.conf.js"
+            "main": "projects/ngx-feedback2/src/test.ts",
+            "tsConfig": "projects/ngx-feedback2/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-feedback2/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-feedback/tsconfig.lib.json",
-              "projects/ngx-feedback/tsconfig.spec.json"
+              "projects/ngx-feedback2/tsconfig.lib.json",
+              "projects/ngx-feedback2/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
